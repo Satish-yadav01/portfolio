@@ -3,6 +3,7 @@ body
     margin:0;
     padding:0;
     font-family:sans-serif;
+    user-select: none;
    
 }
 /*----------------------------header css--------------------*/
@@ -84,7 +85,7 @@ img
 /*-------------------------About--------------------------------------------------*/
 .about
 {
-    padding-top:50px;
+    margin-top:-180px;
     padding-bottom: 100px;
 }
 .profile-img
@@ -94,7 +95,7 @@ img
     border-radius: 40px;
     padding: 5px;
     height:300px;
-    width:auto;
+    width:100%;
     object-fit: cover;
     transition: all 1s;
 }
@@ -142,7 +143,7 @@ img
 /*------------------------------Resume  -----------------------------------------*/
 .resume{
     padding-top: 50px;
-    padding-bottom: 30px;
+    margin-bottom: 40px;
     background: #f9f9f9;
 }
 
@@ -198,14 +199,8 @@ img
 }
 
 /*=-----------------------services--------------------------*/
-.services{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
 
-.services h1{
-    margin: 5px;
-}
+
 
 /*-------------------Contact----------------------------*/
 .contact{
@@ -239,18 +234,21 @@ img
     border:2px solid #000 !important;
     background:#000;
 }
+/*----------------------------Social-Icons----------------------------------------*/
 .social-icons{
     top:50%;
     left:10px;
     transform:translateY(-50%);
     position:sticky;
-    z-index:-10;
+    z-index:1;
     width:30px;
-    user-select: auto;
-    
+    visibility: visible;
+
 }
+
 .social-icons ul{
-    padding:10px;
+    padding:initial;
+    
 }
 
 .social-icons ul li{
@@ -266,7 +264,12 @@ img
 .social-icons ul li a{
    
     color:white;
-    user-select: auto;
+}
+.social-icons ul li:hover{
+    margin-left: 16px;
+    padding-left: 30px;
+    width: 80px;
+    transition: 0.6s;
 }
 .social-icons-footer ul{
    box-sizing: border-box;
@@ -287,18 +290,49 @@ img
 .social-icons-footer ul li a i{
     display: block;
     font-size: 20px;
-    background: linear-gradient(blue,red);
-    background-clip: text;
-    text-fill-color:transparent;
+    color:white;
 }
 /*------------------------icons---------------------------*/
 .space{
     margin-right: 10px;
 }
 
+.large{
+    display: inline-block;
+    width:100%;
+    height: 200px;
+    border-radius: 50%;
+    font-size: 0px;
+  
+}
+.card i:before{
+    font-size: 80px;
+    position: relative;
+    color:black;
+    top:calc(50% - 40px);
+    background-color: transparent;
 
 
+}
+.card .bolder{
+    font-weight: bolder;
+}
+.card .lighter{
+    font-weight: lighter;
+    color:#ccc;
+}
 
+@media screen and (max-width: 800px){
+    .social-icons{
+    top:50%;
+    left:10px;
+    transform:translateY(-50%);
+    position:sticky;
+    z-index:1;
+    width:30px;
+    visibility: hidden;
+    }
+}
 
 
 
