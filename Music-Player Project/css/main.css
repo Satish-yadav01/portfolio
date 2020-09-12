@@ -29,7 +29,7 @@
 	border-radius: 50%;
 	background-color: white;
 	box-sizing: border-box;
-	top: calc(100vh - 50vh - 25%);
+	top: calc(100vh - 50vh - 98px - 25%);
 	left : calc(100% - 50% - 150px);
 
 }
