@@ -106,12 +106,14 @@ img {
     padding: 5px;
     height: 300px;
     width: 100%;
+    filter: blur(2px);
     object-fit: cover;
-    transition: all 1s;
+    transition: all 1.5s;
 }
 
 .profile-img:hover {
     height: 350px;
+    filter: blur(0px) grayscale(5%);
 }
 
 .progress {
