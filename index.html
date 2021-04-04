@@ -6,6 +6,8 @@
     <!-----ADS Code-------------->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- css -->
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -43,8 +45,8 @@
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="#">Satish Yadav</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fa fa-bars"></i>
-    </button>
+                    <i class="fa fa-bars"></i>
+                </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
@@ -75,9 +77,6 @@
             <ul>
                 <li><a href="https://www.linkedin.com/in/satish-yadav-905bb717a/"><i class="fa fa-linkedin"></i></a></li>
                 <li><a href="https://github.com/Satish-yadav01"><i class="fa fa-github"></i></a></li>
-                <li>
-                    <a href="https://www.hackerrank.com/satishsy" target="_blank"><img src="img/hackerrank.png" alt="hackerRank" style="width:30px; height:25px; filter: invert(1);"></a>
-                </li>
             </ul>
         </div>
         <!-----------About-------------------------------------->
@@ -88,7 +87,7 @@
             <div class="row">
                 <div class="col-md-6 text-center">
                     <img src="IMG/satish.png" alt="satish" class="profile-img">
-                    <h3>Who's this guy?</h3>
+                    <h3 class="bounce">Who's this guy?</h3>
                     <h5>
                         <br> My Name is <b><span
                         class="txt-rotate"
@@ -99,49 +98,55 @@
                 </div>
                 <div class="col-md-6">
 
-                    <!-- Skill Bars -->
-                    <div class="skills-bar ">
-                        <div class="progress mb-2" style="height: 40px;">
-                            <div class="progress-bar" style="width:30%; background-color:#21c9cf;">HTML</div>
-                            <div class="progress-bar" style="width:60%;">90%</div>
-                        </div>
-                        <div class="progress mb-2" style="height: 40px;">
-                            <div class="progress-bar" style="width:30%; background-color:#21c9cf;">CSS</div>
-                            <div class="progress-bar" style="width:60%;">90%</div>
-                        </div>
-                        <div class="progress mb-2" style="height: 40px;">
-                            <div class="progress-bar" style="width:30%; background-color:#21c9cf;">JAVASCRIPT</div>
-                            <div class="progress-bar" style="width:60%;">90%</div>
-                        </div>
-                        <div class="progress mb-2" style="height: 40px;">
-                            <div class="progress-bar" style="width:30%; background-color:#21c9cf;">NODEJS</div>
-                            <div class="progress-bar" style="width:50%;">80%</div>
-                        </div>
-                        <div class="progress mb-2" style="height: 40px;">
-                            <div class="progress-bar" style="width:30%; background-color:#21c9cf;">MONGODB</div>
-                            <div class="progress-bar" style="width:30%;">60%</div>
-                        </div>
-                        <div class="progress mb-2" style="height: 40px;">
-                            <div class="progress-bar" style="width:30%; background-color:#21c9cf;">EXPRESS</div>
-                            <div class="progress-bar" style="width:50%;">70%</div>
-                        </div>
-                        <div class="progress mb-2" style="height: 40px;">
-                            <div class="progress-bar" style="width:30%; background-color:#21c9cf;">C++</div>
-                            <div class="progress-bar" style="width:40%;">70%</div>
-                        </div>
-                        <div class="progress mb-2" style="height: 40px;">
-                            <div class="progress-bar" style="width:30%; background-color:#21c9cf;">C</div>
-                            <div class="progress-bar" style="width:20%;">50%</div>
-                        </div>
-                        <div class="progress mb-2" style="height: 40px;">
-                            <div class="progress-bar" style="width:30%; background-color:#21c9cf;">JAVA</div>
-                            <div class="progress-bar" style="width:50%;">80%</div>
-                        </div>
-                        <div class="progress mb-2" style="height: 40px;">
-                            <div class="progress-bar" style="width:30%; background-color:#21c9cf;">PYTHON</div>
-                            <div class="progress-bar" style="width:40%;">70%</div>
+                    <button class="btn btn-primary" data-toggle="collapse" data-target="#demo">Check Status</button>
+
+                    <div id="demo" class="collapse">
+                        <!-- Skill Bars -->
+                        <div class="skills-bar ">
+                            <div class="progress mb-2" style="height: 40px;">
+                                <div class="progress-bar" style="width:30%; background-color:#21c9cf;">HTML</div>
+                                <div class="progress-bar" style="width:60%;">90%</div>
+                            </div>
+                            <div class="progress mb-2" style="height: 40px;">
+                                <div class="progress-bar" style="width:30%; background-color:#21c9cf;">CSS</div>
+                                <div class="progress-bar" style="width:60%;">90%</div>
+                            </div>
+                            <div class="progress mb-2" style="height: 40px;">
+                                <div class="progress-bar" style="width:30%; background-color:#21c9cf;">JAVASCRIPT</div>
+                                <div class="progress-bar" style="width:60%;">90%</div>
+                            </div>
+                            <div class="progress mb-2" style="height: 40px;">
+                                <div class="progress-bar" style="width:30%; background-color:#21c9cf;">NODEJS</div>
+                                <div class="progress-bar" style="width:50%;">80%</div>
+                            </div>
+                            <div class="progress mb-2" style="height: 40px;">
+                                <div class="progress-bar" style="width:30%; background-color:#21c9cf;">MONGODB</div>
+                                <div class="progress-bar" style="width:30%;">60%</div>
+                            </div>
+                            <div class="progress mb-2" style="height: 40px;">
+                                <div class="progress-bar" style="width:30%; background-color:#21c9cf;">EXPRESS</div>
+                                <div class="progress-bar" style="width:50%;">70%</div>
+                            </div>
+                            <div class="progress mb-2" style="height: 40px;">
+                                <div class="progress-bar" style="width:30%; background-color:#21c9cf;">C++</div>
+                                <div class="progress-bar" style="width:40%;">70%</div>
+                            </div>
+                            <div class="progress mb-2" style="height: 40px;">
+                                <div class="progress-bar" style="width:30%; background-color:#21c9cf;">C</div>
+                                <div class="progress-bar" style="width:20%;">50%</div>
+                            </div>
+                            <div class="progress mb-2" style="height: 40px;">
+                                <div class="progress-bar" style="width:30%; background-color:#21c9cf;">JAVA</div>
+                                <div class="progress-bar" style="width:50%;">80%</div>
+                            </div>
+                            <div class="progress mb-2" style="height: 40px;">
+                                <div class="progress-bar" style="width:30%; background-color:#21c9cf;">PYTHON</div>
+                                <div class="progress-bar" style="width:40%;">70%</div>
+                            </div>
                         </div>
                     </div>
+
+
 
                 </div>
             </div>
@@ -152,7 +157,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-9 mx-auto">
+                    <div class="col-md-6 mx-auto">
                         <h3 class="text-center">My Education</h3>
                         <hr style="width: 30%; height: 2px; background-color: black;">
                         <ul class="timeline">
@@ -183,6 +188,12 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="col-md-6 col-12">
+                        <h3 class="text-center">Score Card</h3>
+                        <hr style="width: 30%; height: 2px; background-color: black;">
+                        <img src="IMG/scorecard.png" alt="scorecard" class="img-fluid" style="width: 100%; height: inherit;">
+                    </div>
+
 
                     <!-- col -->
 
@@ -195,9 +206,9 @@
             <div class="container my-5">
                 <h1 class="text-center">PROJECT</h1>
                 <hr style="width: 30%; height: 2px; background-color: black;">
-                <div class="row m-auto">
-                    <div class="col-md-3 ">
-                        <div class="card" style="width: 18rem;">
+                <div class="row m-auto ">
+                    <div class="col-sm-12 col-md-4 mx-auto">
+                        <div class="card shadow" style="width: 18rem;">
                             <i class="fa fa-credit-card text-center large"></i>
                             <div class="card-body">
                                 <h5 class="card-title bolder">E-Bank</h5>
@@ -206,8 +217,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-sm-12 col-md-4 mb-2">
+                        <div class="card shadow" style="width: 18rem;">
                             <i class="fa fa-file-text-o text-center large"></i>
                             <div class="card-body">
                                 <h5 class="card-title bolder">Notepad</h5>
@@ -216,8 +227,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="card shadow" style="width: 18rem;">
                             <i class="fa fa-download text-center large"></i>
                             <div class="card-body">
                                 <h5 class="card-title bolder">Youtube Video-Downloader</h5>
@@ -226,8 +237,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-4">
+                        <div class="card shadow" style="width: 18rem;">
                             <i class="fa fa-comments text-center large"></i>
                             <div class="card-body">
                                 <h5 class="card-title bolder">Chat Application</h5>
@@ -252,7 +263,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <i class="fa fa-phone"></i>
-                        <p>+91755-----31</p>
+                        <p>+917558757731</p>
                     </div>
 
                     <div class="col-md-4">
@@ -271,7 +282,7 @@
     </button>
 
                 <button type="button" class="btn btn-primary">
-    <span><a href="https://mail.google.com/" target="_blank" ><i class="fa fa-rocket space"></i>Hire me</a></span>
+    <span><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSDZBMmHCwHxLvSKGJdrfHFwJTvCtHDJzxqwKKzKhkKbvPzdSSnrgzMHCcZnKNPKrfCkqpMW" target="_blank" ><i class="fa fa-rocket space"></i>Hire me</a></span>
     </button>
             </div>
 
