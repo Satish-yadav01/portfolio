@@ -115,9 +115,50 @@ img {
     filter: blur(0px) grayscale(5%);
 }
 
-.progress {
+
+/* .progress {
     border: 1ps solid black;
+} */
+
+
+/* progress */
+
+.skills-bar {
+    padding: 10px;
+    background: none;
 }
+
+
+/* .progress-bar {
+    width: 0;
+    animation: progress 1.5s ease-in-out forwards;
+}
+
+.title {
+    opacity: 0;
+    animation: show 0.35s forwards ease-in-out 0.5s;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */
+
+
+/* navbar */
 
 .nav-bar {
     top: 0;
@@ -149,11 +190,6 @@ img {
 
 .nav-link {
     color: #fff !important;
-}
-
-.skills-bar {
-    padding: 10px;
-    background: none;
 }
 
 
