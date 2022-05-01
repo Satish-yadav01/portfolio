@@ -99,21 +99,21 @@ img {
 }
 
 .profile-img {
-    border-left: 5px solid black;
-    border-right: 5px solid black;
-    border-radius: 40px;
+    /* border-left: 5px solid black;
+    border-right: 5px solid black; */
+    /* border-radius: 40px; */
     object-fit: contain;
     padding: 5px;
-    height: 400px;
+    height: 500px;
     width: 100%;
-    filter: blur(2px);
+    filter: blur(0px);
     object-fit: cover;
     transition: all 1.5s;
 }
 
-.profile-img:hover {
-    filter: blur(0px) grayscale(5%);
-}
+/* .profile-img:hover {
+    filter: blur(1px) grayscale(2%);
+} */
 
 
 /* .progress {
