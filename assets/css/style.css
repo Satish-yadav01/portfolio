@@ -105,8 +105,8 @@ img {
     /* border-radius: 40px; */
     /* object-fit: contain; */
     padding: 5px;
-    height: 300px;
-    width: 65%;
+    height: 400px;
+    width: 80%;
     filter: blur(0px);
     object-fit: cover;
     transition: all 1.5s;
