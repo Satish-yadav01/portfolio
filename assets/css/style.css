@@ -200,10 +200,10 @@ img {
     padding-top: 50px;
     margin-bottom: 40px;
     background: #f9f9f9;
-    background-image: url(../../IMG/bg5.png);
+    background-image: url(../../IMG/bg5.jpg);
     background-position: center;
-    background-size: cover;
-    /* background-attachment: fixed; */
+    background-size:cover;
+    background-attachment: fixed;
     box-sizing: border-box;
 
 }
