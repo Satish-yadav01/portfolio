@@ -14,7 +14,7 @@ body {
 
 #header {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../IMG/background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/img/background.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -96,7 +96,7 @@ img {
 .about {
     margin-top: -180px;
     padding-bottom: 100px;
-    /* background-image: url(../../IMG/bg6.png); */
+    /* background-image: url(../../assets/img/bg6.png); */
 }
 
 .profile-img {
@@ -200,7 +200,7 @@ img {
     padding-top: 50px;
     margin-bottom: 40px;
     background: #f9f9f9;
-    background-image: url(../../IMG/bg5.jpg);
+    background-image: url(../../assets/img/bg5.jpg);
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
@@ -270,7 +270,7 @@ img {
 
 .contact {
     padding-top: 50px;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../IMG/background.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/img/background.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
