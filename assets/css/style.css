@@ -290,8 +290,13 @@ img {
 
 .contact .btn {
     padding: 10px 20px;
-    margin: 5px;
-    border-radius: 3px;
+    margin: 8px;
+    border-radius: 5px;
+}
+
+.contact .btn a{
+    text-decoration: none;
+    color: white;
 }
 
 .contact .btn:focus {
