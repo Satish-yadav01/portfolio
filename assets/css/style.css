@@ -1,5 +1,10 @@
 html {
     scroll-behavior: smooth;
+    
+}
+
+*{
+    border-radius: 30px;
 }
 
 body {
@@ -19,6 +24,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     box-sizing: border-box;
+    border-radius: 0;
 }
 
 .user-box {
@@ -96,6 +102,7 @@ img {
 .about {
     margin-top: -180px;
     padding-bottom: 100px;
+    /* background-color: #ccc; */
     /* background-image: url(../../assets/img/bg6.png); */
 }
 
@@ -107,7 +114,9 @@ img {
     padding: 5px;
     height: 400px;
     width: 80%;
-    filter: blur(0px);
+    /* box-shadow: 4px 4px 4px 6px rgb(197, 113, 113); */
+    border-radius: 30px;
+    filter: drop-shadow(8px 5px 3px #55554e);
     object-fit: cover;
     transition: all 1.5s;
 }
@@ -117,16 +126,18 @@ img {
 } */
 
 
-/* .progress {
+.progress {
     border: 1ps solid black;
-} */
+    background: red;
+}
 
 
 /* progress */
 
 .skills-bar {
     padding: 10px;
-    background: none;
+    /* border: 1ps solid black;
+    background: red; */
 }
 
 
@@ -169,15 +180,18 @@ img {
 
 .navbar {
     background-color: #000;
+    border-radius: 0;
 }
 
 .nav-bar .fa-bars {
     font-size: 35px;
     color: #fff;
+   
 }
 
 .user-info {
     background-color: #ccc;
+    /* border-radius: 0; */
 }
 
 .user-info .navbar-toggler {
@@ -259,7 +273,7 @@ img {
 }
 
 .timeline li:hover::before {
-    background-color: blue;
+    background-color: rgb(68, 68, 78);
 }
 
 
@@ -276,6 +290,7 @@ img {
     background-attachment: fixed;
     color: white;
     z-index: 0;
+    border-radius: 0;
 }
 
 .contact .row {
