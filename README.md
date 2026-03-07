@@ -61,10 +61,6 @@ A modern, responsive portfolio website with an integrated admin panel for dynami
 
 **Admin Panel**: [https://satish-yadav01.github.io/portfolio/admin/](https://satish-yadav01.github.io/portfolio/admin/)
 
-**Admin Credentials** (Demo):
-- Username: `admin`
-- Password: `admin123`
-
 ---
 
 ## 🛠️ Tech Stack

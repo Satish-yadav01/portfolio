@@ -24,11 +24,7 @@ Open your portfolio and look for the **gear icon (⚙️)** in the bottom-right 
 http://localhost:8000/admin
 ```
 
-### 2. Login
 
-Use the demo credentials:
-- **Username:** `admin`
-- **Password:** `admin123`
 
 ### 3. Fetch Your Repositories
 
