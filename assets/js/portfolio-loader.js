@@ -199,7 +199,7 @@ function initializePortfolio() {
         adminLink.className = 'admin-link';
         adminLink.style.cssText = 'position: fixed; bottom: 20px; right: 20px; z-index: 999;';
         adminLink.innerHTML = `
-            <a href="/admin" 
+            <a href="./admin/" 
                class="btn btn-sm btn-primary" 
                style="border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; font-size: 20px; text-decoration: none;"
                title="Admin Panel">
