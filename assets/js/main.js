@@ -87,6 +87,54 @@
         return false;
       });
 
+      /* Skill Bar Animation on Hover
+      ========================================================*/
+      
+      function initSkillBarHover() {
+        const progressElements = document.querySelectorAll('.skills-bar .progress');
+        
+        progressElements.forEach((progress) => {
+          progress.style.cursor = 'pointer';
+          
+          progress.addEventListener('mouseenter', function() {
+            const bars = this.querySelectorAll('.progress-bar');
+            const percentBar = bars[1]; // Second bar is the percentage
+            
+            if (percentBar && !percentBar.dataset.animating) {
+              percentBar.dataset.animating = 'true';
+              
+              // Get target width
+              const currentStyle = percentBar.getAttribute('style');
+              const widthMatch = currentStyle.match(/width\s*:\s*([\d.]+%)/);
+              const target = widthMatch ? widthMatch[1] : '60%';
+              
+              // Reset
+              percentBar.style.width = '0%';
+              
+              // Trigger reflow
+              void percentBar.offsetWidth;
+              
+              // Animate
+              percentBar.style.width = target;
+            }
+          });
+          
+          progress.addEventListener('mouseleave', function() {
+            const bars = this.querySelectorAll('.progress-bar');
+            const percentBar = bars[1];
+            if (percentBar) {
+              percentBar.dataset.animating = 'false';
+            }
+          });
+        });
+      }
+      
+      // Initialize
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initSkillBarHover);
+      } else {
+        initSkillBarHover();
+      }
 
 
   });      

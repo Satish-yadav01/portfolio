@@ -140,8 +140,45 @@ img {
     background: red; */
 }
 
+.progress {
+    border: 1ps solid black;
+    background: red;
+    overflow: hidden;
+    position: relative;
+}
 
-/* .progress-bar {
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+}
+
+/* Animate only the second bar (percentage bar) on hover */
+.progress-bar:nth-child(2) {
+    transition: width 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0 !important;
+    }
+    to {
+        width: inherit;
+    }
+}
+
+/* Add smooth counter animation for numbers */
+@keyframes counterUp {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
     width: 0;
     animation: progress 1.5s ease-in-out forwards;
 }
@@ -229,6 +266,25 @@ img {
 .timeline {
     list-style-type: none;
     position: relative;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.timeline::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.timeline::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+    background: transparent;
 }
 
 .timeline::before {
@@ -249,7 +305,11 @@ img {
     margin-left: 20px;
     background: #fff;
     padding: 20px;
-    max-height: 190px;
+    max-height: auto;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
 }
 
 .timeline li h4 {
@@ -257,6 +317,9 @@ img {
     padding: 10px;
     color: white;
     font-size: 15px;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .timeline li::before {
@@ -397,16 +460,16 @@ img {
 .large {
     display: inline-block;
     width: 100%;
-    height: 200px;
+    height: 80px;
     border-radius: 50%;
     font-size: 0px;
 }
 
 .card i:before {
-    font-size: 80px;
+    font-size: 35px;
     position: relative;
     color: black;
-    top: calc(50% - 40px);
+    top: calc(50% - 17.5px);
     background-color: transparent;
 }
 
@@ -433,4 +496,254 @@ img {
 
 button a {
     color: white;
+}
+
+
+/*------------------------Project Carousel---------------------------*/
+
+#project {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 60px 20px;
+    border-radius: 0;
+}
+
+#project .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+#project h1 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+#project hr {
+    margin: 0 auto 40px !important;
+}
+
+.project-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    width: 100%;
+}
+
+.project-carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px 10px;
+    scroll-behavior: smooth;
+    flex: 1;
+    width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    align-items: stretch;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.project-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.project-card-container {
+    flex: 0 0 auto;
+    width: 320px;
+    min-width: 320px;
+    display: flex;
+    align-items: stretch;
+}
+
+.project-card-container .card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card-container .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 15px;
+}
+
+.project-card-container .card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.project-card-container .card-title {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.project-card-container .card-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+    flex: 1;
+}
+
+.project-card-container .btn {
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.project-card-container .btn:hover {
+    background-color: #333 !important;
+    transform: translateY(-2px);
+}
+
+.project-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 12px;
+    color: #999;
+}
+
+.project-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+.project-meta i {
+    font-size: 12px;
+}
+
+/* Carousel Navigation Buttons */
+.carousel-btn {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    z-index: 10;
+    flex-shrink: 0;
+}
+
+.carousel-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.carousel-btn:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+.carousel-btn i {
+    font-size: 20px;
+}
+
+.carousel-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: linear-gradient(135deg, #999 0%, #666 100%);
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .project-carousel-wrapper {
+        gap: 10px;
+        padding: 0;
+    }
+
+    .project-carousel {
+        gap: 20px;
+        padding: 15px 5px;
+    }
+
+    .project-card-container {
+        width: 280px;
+        min-width: 280px;
+    }
+
+    .carousel-btn {
+        width: 45px;
+        height: 45px;
+    }
+
+    .carousel-btn i {
+        font-size: 18px;
+    }
+
+    #project h1 {
+        font-size: 28px;
+    }
+
+    #project {
+        padding: 40px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-carousel-wrapper {
+        gap: 5px;
+        padding: 0;
+    }
+
+    .project-carousel {
+        gap: 15px;
+        padding: 10px 5px;
+    }
+
+    .project-card-container {
+        width: 260px;
+        min-width: 260px;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-btn i {
+        font-size: 16px;
+    }
+
+    #project {
+        padding: 30px 10px;
+    }
+
+    #project h1 {
+        font-size: 24px;
+    }
+
+    .project-card-container .card-title {
+        font-size: 16px;
+    }
+
+    .project-card-container .card-text {
+        font-size: 13px;
+    }
 }

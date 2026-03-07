@@ -159,12 +159,13 @@
             </div>
         </div>
 
-        <!-------------Resume-------------------------------->
+        <!-------------Experience-------------------------------->
+        <!-------------Experience & Education-------------------------------->
         <div class="resume" id="My-Education">
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-6 mx-auto">
+                    <div class="col-md-6">
                         <h3 class="text-center wow fadeInUp" data-wow-delay="0.4s">My Education</h3>
                         <hr style="width: 30%; height: 2px; background-color: black;">
                         <div class="wow slideInLeft" data-wow-delay="0.2s">
@@ -205,15 +206,38 @@
                         </div>
 
                     </div>
-                    <!-- <div class="col-md-6 col-12">
-                        <h3 class="text-center wow fadeInUp" data-wow-delay="0.4s">Score Card</h3>
+
+                    <div class="col-md-6">
+                        <h3 class="text-center wow fadeInUp" data-wow-delay="0.4s">Experience</h3>
                         <hr style="width: 30%; height: 2px; background-color: black;">
-                        <img src="assets/img/scorecard.png" alt="scorecard" class="img-fluid wow slideInRight" data-wow-delay="0.2s" style="width: 100%; height: inherit;">
-                    </div> -->
+                        <div class="wow slideInRight" data-wow-delay="0.2s">
+                            <ul class="timeline">
+                                <li>
+                                    <h4><i class="fa fa-briefcase space"></i>Software Development Engineer (SDE)</h4>
 
+                                    <b>Company</b> NPST<br>
+                                    <b>Duration</b> 2024 - Present<br>
+                                    <b>Responsibilities</b> Developing robust and scalable applications using Java, Spring Boot, Hibernate, and Microservices architecture. Building RESTful APIs and integrating them with various systems. Proficient in MySQL and database management.
+                                </li>
+                                <li>
+                                    <h4><i class="fa fa-code space"></i> Java Developer
+                                    </h4>
+                                    <b>Company</b> Quantum Edge<br>
+                                    <b>Duration</b> 2023 - 2024<br>
+                                    <b>Responsibilities</b> Developed enterprise applications using Java and Spring Boot. Implemented RESTful web services and worked with SQL databases. Collaborated with cross-functional teams to deliver high-quality solutions.
+                                </li>
 
-                    <!-- col -->
+                                <li>
+                                    <h4><i class="fa fa-laptop space"></i> Associate Software Developer
+                                    </h4>
+                                    <b>Company</b> Hexaware Technologies<br>
+                                    <b>Duration</b> 2022 - 2023<br>
+                                    <b>Responsibilities</b> Developed and maintained web applications using Java, Python, and JavaScript. Worked on full-stack development with focus on backend services. Involved in code reviews and quality assurance processes.
+                                </li>
+                            </ul>
+                        </div>
 
+                    </div>
 
                 </div>
             </div>
@@ -222,59 +246,23 @@
         <section id="project">
             <div class="container my-5">
                 <h1 class="text-center wow fadeInUp" data-wow-delay="0.2s">PROJECT</h1>
-                <hr style="width: 30%; height: 2px; background-color: black;">
-                <div class="row m-auto ">
+                <hr style="width: 30%; height: 2px; background-color: black; margin-bottom: 40px;">
+                
+                <div class="project-carousel-wrapper">
+                    <!-- Previous Button -->
+                    <button class="carousel-btn carousel-btn-prev" id="prevProjectBtn" aria-label="Previous Project">
+                        <i class="fa fa-chevron-left"></i>
+                    </button>
 
-                    <div class="col-sm-12 col-md-4 mx-auto wow fadeInDown mix web desktop" data-wow-delay="0.3s">
-                        <div class="card shadow" style="width: 18rem;">
-                            <i class="fa fa-credit-card text-center large"></i>
-                            <div class="card-body">
-                                <h5 class="card-title bolder">E-Bank</h5>
-                                <p class="card-text" style="color: rgb(77, 100, 202);">E-bank is Console based
-                                    Demo-software. That describes the simple banking system.what we need or required to
-                                    join one bank account</p>
-                                <a href="https://github.com/Satish-yadav01/E-Bank" class="btn btn-dark">Click here</a>
-                            </div>
-                        </div>
+                    <!-- Scrollable Container -->
+                    <div class="project-carousel" id="projectCarousel">
+                        <!-- Projects loaded dynamically from localStorage -->
                     </div>
-                    <!-- <div class="col-sm-12 col-md-4 mb-2 wow fadeInDown mix desktop" data-wow-delay="0.6s">
-                        <div class="card shadow" style="width: 18rem;">
-                            <i class="fa fa-file-text-o text-center large"></i>
-                            <div class="card-body">
-                                <h5 class="card-title bolder">Notepad</h5>
-                                <p class="card-text" style="color: rgb(77, 100, 202);">Notepad is easy to use and build, this one is exact same as we use from build-in notepad of microsoft having features of cut,copy and paste</p>
-                                <a href="https://github.com/Satish-yadav01/Notepad-using-Pyhton" class="btn btn-dark">Click here</a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div class="col-sm-12 col-md-4 wow fadeInDown mix console desktop" data-wow-delay="0.9s">
-                        <div class="card shadow" style="width: 18rem;">
-                            <i class="fa fa-download text-center large"></i>
-                            <div class="card-body">
-                                <h5 class="card-title bolder">Blog REST api</h5>
-                                <p class="card-text" style="color: rgb(77, 100, 202);">This project is completely built under Spring boot, hibernate, spring
-                                  MVC, and MySQL with the help of Java, java EE which is secured
-                                  by Spring security with the help of authentication and authorization
-                                  It has modules : Post and Comment</p>
-                                <a href="https://github.com/Satish-yadav01/blog-rest-api" class="btn btn-dark">Click
-                                    here</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 wow fadeInDown console web" data-wow-delay="1.2s">
-                        <div class="card shadow" style="width: 18rem;">
-                            <i class="fa fa-comments text-center large"></i>
-                            <div class="card-body">
-                                <h5 class="card-title bolder">Chat Application</h5>
-                                <p class="card-text " style="color: rgb(77, 100, 202);">A real-time communications is
-                                    done by this project.This project includes some modules. <br>1. Admin panel. <br>2.
-                                    Passport Authentication. <br>3. Group chat section. <br>4. Online visibility.
-                                </p>
-                                <a href="https://chat-application-satishyadav.herokuapp.com/" target="_blank"
-                                    class="btn btn-dark">Preview</a>
-                            </div>
-                        </div>
-                    </div>
+
+                    <!-- Next Button -->
+                    <button class="carousel-btn carousel-btn-next" id="nextProjectBtn" aria-label="Next Project">
+                        <i class="fa fa-chevron-right"></i>
+                    </button>
                 </div>
 
             </div>
@@ -347,6 +335,10 @@
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/nivo-lightbox.js"></script>
     <script src="assets/js/jquery.slicknav.js"></script>
+    
+    <!-- Load Projects from Admin Panel -->
+    <script src="assets/js/portfolio-loader.js"></script>
+    
     <script src="assets/js/main.js"></script>
     <script src="assets/js/form-validator.min.js"></script>
     <script src="assets/js/contact-form-script.min.js"></script>
