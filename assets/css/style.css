@@ -747,3 +747,236 @@ button a {
         font-size: 13px;
     }
 }
+
+/*------------------------Clients Section---------------------------*/
+
+#clients {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 20px;
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#clients::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+#clients .container {
+    position: relative;
+    z-index: 1;
+}
+
+#clients h1 {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#clients hr {
+    background-color: #ffffff !important;
+    margin: 0 auto 60px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.client-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.client-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s;
+}
+
+.client-card:hover::before {
+    left: 100%;
+}
+
+.client-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.client-logo-wrapper {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.client-card:hover .client-logo-wrapper {
+    background: linear-gradient(135deg, #e8eaf6 0%, #d1d9ff 100%);
+    transform: scale(1.05);
+}
+
+.client-logo {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(0%);
+    transition: all 0.4s ease;
+}
+
+.client-card:hover .client-logo {
+    transform: scale(1.25);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.client-card h4 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 10px;
+    border-top: 2px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.client-card:hover h4 {
+    color: #667eea;
+    transform: scale(1.05);
+}
+
+/* Tablet Responsiveness */
+@media screen and (max-width: 992px) {
+    .clients-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 30px;
+        padding: 15px;
+    }
+
+    #clients {
+        padding: 60px 15px;
+    }
+
+    #clients h1 {
+        font-size: 32px;
+    }
+
+    .client-card {
+        padding: 35px 25px;
+    }
+
+    .client-logo-wrapper {
+        height: 100px;
+        padding: 15px;
+    }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .clients-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 25px;
+        padding: 10px;
+    }
+
+    #clients {
+        padding: 50px 10px;
+    }
+
+    #clients h1 {
+        font-size: 28px;
+    }
+
+    .client-card {
+        padding: 30px 20px;
+    }
+
+    .client-logo-wrapper {
+        height: 90px;
+        padding: 12px;
+    }
+
+    .client-card h4 {
+        font-size: 16px;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .clients-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 5px;
+    }
+
+    #clients {
+        padding: 40px 10px;
+    }
+
+    #clients h1 {
+        font-size: 24px;
+    }
+
+    .client-card {
+        padding: 25px 15px;
+        width: 100%;
+        max-width: 350px;
+        min-width: 280px;
+        margin: 0 auto;
+    }
+
+    .client-logo-wrapper {
+        height: 80px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .client-card h4 {
+        font-size: 15px;
+    }
+
+    .client-card:hover {
+        transform: translateY(-10px) scale(1.02);
+    }
+}
+
+/* Extra Small Mobile Devices */
+@media screen and (max-width: 360px) {
+    .client-card {
+        min-width: 260px;
+        max-width: 320px;
+    }
+}
